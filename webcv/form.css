@@ -42,3 +42,10 @@
   .contact-form input[type="submit"]:hover {
     background-color: #2EC980;
   }
+
+.success{
+  margin-bottom: 10%;
+
+  align-content: center;
+  font-family: Montserrat, sans-serif;
+}
