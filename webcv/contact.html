@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="form.css" rel="stylesheet" type="text/css" />
         <link rel="icon" href="TC_icone_png.png" />
         <!--- Importer les fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +18,8 @@
         <div class="navbar">
             <h2 class="author">Théo <span>Manya</span></h2>
             <ul>
-                <li class="home active"><a href="#">Accueil</a></li>
-                <li class="contact"><a href="contact.html">Contact</a></li>
+                <li class="home"><a href="index.html"">Accueil</a></li>
+                <li class="contact active"><a href="#">Contact</a></li>
                 <li class="portfolio"><a href="#">Portfolio</a></li>
             </ul>
         </div>
@@ -36,23 +37,20 @@
                   </div>
             </div>
             <div class="card-content">
-                <div class="about">
-                  <div class="author">
-                    <div class="presentation">
-                      <h1 class="about">À propos <span>de moi</span></h1>
-                      <p>Hey ! Je suis Théo Manya, j'aime l'Informatique, la moto et la musculation ! Je pratique l'Informatique depuis l'âge de 10 ans et la moto depuis mon plus jeune âge ! Vous pouvez me contacter pour toute demande !</p>
-                    </div>
-                    <div class="precisions">
-                      <ul>
-                        <li><span class="label">Age</span> <span class="value">17</span></li>
-                        <li><span class="label">Pays</span> <span class="value">France</span></li>
-                        <li><span class="label">Hobbies</span> <span class="value">Moto, Musculation, Informatique</span></li>
-                        <li><span class="label">Email</span> <span class="value">manya.th@icloud.com</span></li>
-                      </ul> 
-                    </div>
-                  </div>
-                </div>
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <label for="name"><span class="green">Nom </span>et <span class="green">prénom </span></label>
+                        <input type="text" id="name" name="name" placeholder="Dwane Johnson">
+
+                        <label for="email">Votre <span class="green">email</span></label>
+                        <input type="text" id="email" name="email" placeholder="votre.email@gmail.com">
+
+                        <label for="message">Entrer votre <span class="green">message</span></label>
+                        <textarea id="message" name="message" placeholder="Bonjour, je vous contacte pour.... merci !"></textarea>
+
+                        <input type="submit" value="Envoyer mon message">
+
+                    </form>
               </div>
         </div>
 </body>
-</html>
